@@ -47,4 +47,32 @@
 20:		End if  End if   End if
 ```
 
+### Pseudocode of Non-recursive solution
 
+```
+1: select circuit
+2: Extract netlist data
+3: set initial best cost and partition size
+4: add initial job to the jobs list
+5: While jobs list is not empty do:
+6:		sort jobs list according to the cost
+7:		select first item from the jobs list
+8:		add it to the closed list
+9:		remove it from the jobs list
+10:		if (number of nodes in left partition and right partition equal to total nodes )
+11:			if current solution has smaller cost than the best cost
+12:				update best solution with current solution
+13:		End if End if
+14:		else:
+15:			if temporary cost for the current assignment is less than best cost
+16:			    if left partition is accepting nodes
+17:				  get a temporary assignment by adding current_node to the left list
+18:				  get next node to assign
+19:				  if cost of temporary assignment is less than best cost
+20:					add it to the jobs list
+21:			    End if End if
+22:                     repeat steps 16 - 21 for right partition
+23:		End else
+24: End while
+25: show the best solution in GUI.
+```
