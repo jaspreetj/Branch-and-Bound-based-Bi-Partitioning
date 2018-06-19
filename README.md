@@ -13,7 +13,7 @@
  * If the nodes of a net share both partitions, then the net contributes +1 to the total cost. For example: In fig.1, the total cost is 3 as there are 3 nets who have their nodes crossing the partition line. In the circuit, the total number of nodes is 19 and the number of nodes assigned to the left and right partitions are 10 and 9, respectively.
 
 
-### PseudoCode of Implementation Framework
+### PseudoCode of Recursion based Solution
 ```
 1: select circuit
 2: Extract netlist data
