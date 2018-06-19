@@ -14,17 +14,17 @@
 
 
 ### PseudoCode of Implementation Framework
-'''
+```
 1: select circuit
 2: Extract netlist data
 3: set initial best cost and partition size
 4: Use routine function recursively to obtain a solution
 5: Show the final partition in a GUI.
-'''
+```
 
 
 ### Pseudocode of Routine Function
-'''
+```
 1: routine( current_assignments, current_node, best_cost){
 2:	if we have no further nodes to explore or are at a leaf/solution
 3:		if current solution has lesser cost than the best solution
@@ -45,6 +45,6 @@
 18:				if (cost of temporary assignment is less than the best cost)
 19:					repeat routine with parameters (temporary assignment, next node and best cost)
 20:		End if  End if   End if
-'''
+```
 
 
