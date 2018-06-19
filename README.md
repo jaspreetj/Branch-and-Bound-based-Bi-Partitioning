@@ -4,6 +4,8 @@
  
 ### Objective
 
+![bipartition_example](https://user-images.githubusercontent.com/15523357/41576838-667380d2-733e-11e8-940f-94bcced00366.png)
+
 - To design a program to distribute nodes into two partitions while minimizing the number of nets that share both partitions. The size of the both partitions should be equal and can differ by at most 1 only if there are an odd number of nodes.
 
 ### Design Rules
